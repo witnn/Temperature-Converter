@@ -1,5 +1,7 @@
 package app;
 
+// witnn's Temperature Converter
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -45,8 +47,7 @@ public class frame extends JFrame {
             e.printStackTrace();
         } catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace();
-        }
-		
+        }		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -58,10 +59,6 @@ public class frame extends JFrame {
 			}
 		});
 	}
-
-	/**
-	 * Create the frame.
-	 */
 	public frame() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -102,8 +99,7 @@ public class frame extends JFrame {
 		debugText.setFont(new Font("Segoe UI", Font.PLAIN, 12));
 		debugText.setBounds(48, 204, 197, 22);
 		contentPane.add(debugText);
-		
-		
+			
 		JButton ctof = new JButton("Convert");
 		ctof.setForeground(Color.BLACK);
 		ctof.setBackground(Color.DARK_GRAY);
