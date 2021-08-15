@@ -111,20 +111,16 @@ public class frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					String degerS = txt_celin.getText();
-					double deger = Double.parseDouble(degerS);
-					
+					double deger = Double.parseDouble(degerS);					
 					String s = convert(comboBox, comboBox_1, deger) + "";
 					
-					txt_fahout.setText(s);
-					
-					
+					txt_fahout.setText(s);									
 				}
 				catch(Exception edd) {
 					System.out.println("Invalid entry");
 					debugText.setText("Invalid Entry");
 					th(debugText);
-				}
-											
+				}											
 			}
 		});
 		ctof.setFont(new Font("Segoe UI", Font.PLAIN, 14));
@@ -143,9 +139,7 @@ public class frame extends JFrame {
 		lblWitnnsoft.setForeground(Color.BLACK);
 		lblWitnnsoft.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		lblWitnnsoft.setBounds(48, 297, 197, 28);
-		contentPane.add(lblWitnnsoft);
-		
-		
+		contentPane.add(lblWitnnsoft);				
 	}
 	
 	static double convert(JComboBox c1, JComboBox c2, double deger) {
